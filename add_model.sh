@@ -16,7 +16,7 @@ git add "$FILE_PATH.dvc"
 git commit -m "Add model $MODEL_NAME version $VERSION"
 
 echo "Updating registry..."
-python update_registry.py --model "$MODEL_NAME" --version "$VERSION" --file "$FILE_PATH.dvc"
+python3 update_registry.py --model "$MODEL_NAME" --version "$VERSION" --file "$FILE_PATH.dvc"
 
 echo "Pushing to DVC remote..."
 dvc push

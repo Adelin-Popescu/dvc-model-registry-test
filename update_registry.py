@@ -5,10 +5,14 @@ import sys
 
 def extract_hash(dvc_file):
     with open(dvc_file, 'r') as f:
-        for line in f:
-            if line.strip().startswith('md5:'):
-                return line.strip().split('md5: ')[1]
-    raise ValueError("Could not find MD5 hash in the DVC file.")
+        lines = f.readlines()
+    for i, line in enumerate(lines):
+        if line.strip().startswith('md5:'):
+            return line.strip().split('md5: ')[1]
+        if line.strip().startswith('hash:'):
+            return line.strip().split('hash: ')[1]
+    raise ValueError("Could not find hash (md5 or hash) in the DVC file.")
+
 
 def update_registry(model, version, dvc_file, registry_file="model_registry.yaml"):
     if not os.path.exists(dvc_file):

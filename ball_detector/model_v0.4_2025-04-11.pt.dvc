@@ -1,0 +1,5 @@
+outs:
+- md5: 651f6c08ab3791d9c77953b244f5a38f
+  size: 24
+  hash: md5
+  path: model_v0.4_2025-04-11.pt
