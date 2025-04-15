@@ -1,1 +1,5 @@
+.dvc/cache/
 *.pt
+__pycache__/
+.venv/
+.idea/

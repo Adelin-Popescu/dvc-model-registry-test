@@ -1,5 +1,9 @@
-# DVC Model Registry Test Repo
+# DVC Model Registry (Clean Setup)
 
-Test project for tracking model weights using DVC and model_registry.yaml.
+This repo is prepared for large-scale model tracking via DVC, without storing actual data in Git.
 
-See guide for instructions.
+## ✅ What’s included:
+- DVC configuration
+- Registry script for versions
+- GitHub Action to validate DVC and registry
+- Proper `.gitignore` to avoid pushing binary files
