@@ -3,3 +3,7 @@ test_dataset:
     hash: c2a06ea3907900bab26d0e715f63cf46.dir
     date: '2025-04-22T16:55:06.451457+00:00'
     author: Adelin-Popescu
+  v1.1:
+    hash: bc4978f48e5a4096bdffb77789402ecb.dir
+    date: '2025-04-22T16:55:44.976379+00:00'
+    author: Adelin-Popescu
