@@ -22,3 +22,13 @@ pose_dataset:
     author: Adelin-Popescu
     metrics:
       added_file: 3'rd video
+  v2:
+    hash: 6d72b8d95a7592ebf6c82b4732b04abe.dir
+    date: '2025-04-22T05:51:38.200621+00:00'
+    author: Adelin-Popescu
+    metrics:
+      restored: true
+  v2.01:
+    hash: da5ab8621eda72aa6e692fb95de581aa.dir
+    date: '2025-04-22T05:54:46.973529+00:00'
+    author: Adelin-Popescu
