@@ -5,3 +5,4 @@ __pycache__/
 .idea/
 /pose_dataset
 /pose_dataset/**.mp4
+/test_dataset
