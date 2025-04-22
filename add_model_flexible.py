@@ -33,7 +33,8 @@ def push_to_dvc_and_git(model_name, version, dvc_file, metrics, update_registry)
             cmd += f" --metrics '{metrics}'"
         run(cmd)
         run("dvc push")
-        run("git add model_registry.yaml")
+        cmd = f"git add model_registry.yaml {dvc_file}"
+        run(cmd)
         run(f"git commit -m 'Update model registry: {model_name} {version}'")
         run("git push")
 
