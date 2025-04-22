@@ -3,4 +3,3 @@ outs:
   path: pose_dataset
   size: 9318970901
   nfiles: 5
-  hash: md5
