@@ -1,4 +1,3 @@
-
 import argparse
 import subprocess
 import os
@@ -17,7 +16,8 @@ def dvc_add(path):
     # Add file or directory to DVC
     run(f"dvc add {path}")
     # Determine DVC file path
-    dvc_file = f"{path}.dvc" if os.path.isfile(path) else f"{os.path.basename(path)}.dvc"
+    norm_path = os.path.normpath(path)
+    dvc_file = f"{norm_path}.dvc" if os.path.isfile(path) else f"{os.path.basename(norm_path)}.dvc"
     return dvc_file
 
 def git_commit(dvc_file, model_name, version):
@@ -30,7 +30,7 @@ def push_to_dvc_and_git(model_name, version, dvc_file, metrics, update_registry)
     if update_registry:
         cmd = f"python3 update_registry.py --model {model_name} --version {version} --file {dvc_file}"
         if metrics:
-            cmd += f" --metrics "{metrics}""
+            cmd += f" --metrics '{metrics}'"
         run(cmd)
         run("dvc push")
         run("git add model_registry.yaml")
