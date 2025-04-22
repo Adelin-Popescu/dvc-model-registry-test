@@ -6,10 +6,10 @@ ball_detector:
 pose_dataset:
   v1.0:
     hash: 6f60815f087b10d21f3f62625856fda1.dir
-    date: '2025-04-22T04:58:34.911201Z'
+    date: '2025-04-22T06:02:26.535847+00:00'
     author: Adelin-Popescu
     metrics:
-      files: 2
+      restored: true
   v1.01:
     hash: 6f60815f087b10d21f3f62625856fda1.dir
     date: '2025-04-22T05:00:09.955902+00:00'
