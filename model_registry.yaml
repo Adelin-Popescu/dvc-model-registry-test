@@ -3,3 +3,16 @@ ball_detector:
     hash: md5
     date: '2025-04-15T19:53:09.616614Z'
     author: Adelin-Popescu
+pose_dataset:
+  v1.0:
+    hash: 6f60815f087b10d21f3f62625856fda1.dir
+    date: '2025-04-22T04:58:34.911201Z'
+    author: Adelin-Popescu
+    metrics:
+      files: 2
+  v1.01:
+    hash: 6f60815f087b10d21f3f62625856fda1.dir
+    date: '2025-04-22T05:00:09.955902+00:00'
+    author: Adelin-Popescu
+    metrics:
+      files: 2

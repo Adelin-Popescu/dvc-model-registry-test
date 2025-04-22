@@ -2,18 +2,23 @@ import yaml
 import argparse
 import os
 import sys
-from datetime import datetime
 import subprocess
+from datetime import datetime, timezone
+
 
 def extract_hash(dvc_file):
     with open(dvc_file, 'r') as f:
-        lines = f.readlines()
-    for line in lines:
-        if line.strip().startswith('md5:'):
-            return line.strip().split('md5: ')[1]
-        if line.strip().startswith('hash:'):
-            return line.strip().split('hash: ')[1]
-    raise ValueError("❌ Could not find a valid hash in the DVC file.")
+        dvc_data = yaml.safe_load(f)
+
+    try:
+        md5 = dvc_data['outs'][0]['md5']
+        if md5.lower() == "md5" or len(md5) < 10:
+            raise ValueError(f"❌ Invalid hash in {dvc_file}: {md5}")
+        return md5
+    except Exception:
+        raise ValueError("❌ Could not find a valid md5 hash in the DVC file.")
+
+
 
 def get_git_author():
     try:
@@ -24,10 +29,12 @@ def get_git_author():
 
 def update_registry(model, version, dvc_file, metrics, registry_file="model_registry.yaml"):
     if not os.path.exists(dvc_file):
-        raise FileNotFoundError(f"DVC file not found: {dvc_file}")
+        raise FileNotFoundError(f"❌ DVC file not found: {dvc_file}")
 
     hash_val = extract_hash(dvc_file)
-    now = datetime.utcnow().isoformat() + "Z"
+    from datetime import datetime, timezone
+    now = datetime.now(timezone.utc).isoformat()
+
     author = get_git_author()
 
     # Load current registry
@@ -75,5 +82,5 @@ if __name__ == "__main__":
     try:
         update_registry(args.model, args.version, args.file, args.metrics, args.registry)
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(e)
         sys.exit(1)
