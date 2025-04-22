@@ -84,7 +84,7 @@ def main():
     git_commit(dvc_file, args.model, args.version)
 
     print("🗂️ Pushing and updating registry...")
-    push_to_dvc_and_git(args.model, args.version, dvc_file, md5, args.metrics, args.update_registry, args.bucket, args.s3_path)
+    push_to_dvc_and_git(args.model, args.version, dvc_file, md5, args.metrics, args.update_registryS)
 
     print("✅ Done!")
 
