@@ -1,6 +1,5 @@
 outs:
 - md5: 6f60815f087b10d21f3f62625856fda1.dir
+  path: pose_dataset
   size: 6275906992
   nfiles: 2
-  hash: md5
-  path: pose_dataset
