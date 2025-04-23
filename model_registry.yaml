@@ -7,3 +7,9 @@ test_dataset:
     hash: bc4978f48e5a4096bdffb77789402ecb.dir
     date: '2025-04-22T16:55:44.976379+00:00'
     author: Adelin-Popescu
+  v1.3:
+    hash: 2acdc7eb26e59f4155fb6a5ef41a7250.dir
+    date: '2025-04-23T15:07:21.091581+00:00'
+    author: Adelin-Popescu
+    metrics:
+      size: 1MB
