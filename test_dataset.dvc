@@ -1,6 +1,6 @@
 outs:
-- md5: 2acdc7eb26e59f4155fb6a5ef41a7250.dir
+- md5: a7d8b47faabf276b536822cc49e3f110.dir
   path: test_dataset
-  size: 41
-  nfiles: 3
+  size: 59
+  nfiles: 4
   hash: md5
