@@ -1,6 +1,10 @@
 [core]
     remote = s3remote
     autostage = true
+[cache]
+    type = "reflink,copy"
+    shared = group
+    dir = cache
 ['remote "s3remote"']
-    url = s3://sportai-public-test-files/public/debug/dvc-test/
+    url = s3://sportai-public-test-files/public/debug/dvc-test/files/md5
     region = eu-north-1

@@ -1,6 +1,3 @@
 outs:
 - md5: 8a48138644642d3e186217859ab208ac.dir
   path: testT
-  size: 10
-  nfiles: 2
-  hash: md5

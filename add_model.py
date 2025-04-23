@@ -50,7 +50,7 @@ def main():
 
     if args.update_registry:
         print("☁️ Pushing to remote and updating registry...")
-        run("dvc push")
+        run("dvc push --run-cache --all-branches --all-tags")
         cmd = f"python3 update_registry.py --model {args.model} --version {args.version} --file {dvc_file}"
         if args.metrics:
             cmd += f" --metrics '{args.metrics}'"

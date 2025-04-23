@@ -1,6 +1,3 @@
 outs:
 - md5: 1fc6329997a40975374cd15154b78c88.dir
   path: test_dataset
-  size: 64
-  nfiles: 5
-  hash: md5

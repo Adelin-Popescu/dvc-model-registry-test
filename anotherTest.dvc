@@ -1,6 +1,3 @@
 outs:
 - md5: c79997f4b4f88148695451298ed23aa4.dir
-  size: 12
-  nfiles: 2
-  hash: md5
   path: anotherTest
