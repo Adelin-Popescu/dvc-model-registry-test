@@ -6,3 +6,4 @@ __pycache__/
 /pose_dataset
 /pose_dataset/**.mp4
 /test_dataset
+/dataset
