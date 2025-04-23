@@ -35,3 +35,8 @@ anotherTest:
     hash: c79997f4b4f88148695451298ed23aa4.dir
     date: '2025-04-23T15:54:07.378477+00:00'
     author: Adelin-Popescu
+testF:
+  v1:
+    hash: 08fa7686147d4484408f672ea94651cc.dir
+    date: '2025-04-23T16:48:18.797884+00:00'
+    author: Adelin-Popescu
