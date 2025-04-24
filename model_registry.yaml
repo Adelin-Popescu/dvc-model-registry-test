@@ -10,3 +10,9 @@ mymodel:
     author: Adelin-Popescu
     metrics:
       accuracy: 0.8
+  v2:
+    hash: a1bb7c6c4f27af2936e3864e5238b49e.dir
+    date: '2025-04-24T10:48:24.181288+00:00'
+    author: Adelin-Popescu
+    metrics:
+      accuracy: 0.9
