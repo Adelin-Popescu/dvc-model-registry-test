@@ -3,3 +3,10 @@ test:
     hash: 10557645857d8288e894559feeac759f.dir
     date: '2025-04-24T10:38:31.022253+00:00'
     author: Adelin-Popescu
+mymodel:
+  v1:
+    hash: e3ede449e7cd8b0e83d64297d86fe847.dir
+    date: '2025-04-24T10:47:40.365456+00:00'
+    author: Adelin-Popescu
+    metrics:
+      accuracy: 0.8
