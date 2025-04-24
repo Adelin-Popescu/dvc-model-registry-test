@@ -1,6 +1,5 @@
 outs:
 - md5: a49904650c461b04ea91bdd2e540b01b.dir
+  path: acaa
   size: 15
   nfiles: 1
-  hash: md5
-  path: acaa
